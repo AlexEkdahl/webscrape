@@ -1,8 +1,7 @@
 const puppeteer = require('puppeteer')
-const NAME = 'Alexander Ekdahl'
-const EMAIL = 'alexanderekdahl@me.com'
-const URL =
-  'https://snake.nodehill.com/?Javautvecklare%2021v,%20Plushögskolan%20Lund'
+const NAME = 'name_goes_here'
+const EMAIL = 'your_email_goes_here'
+const URL = 'url_goes_here'
 
 const NAME_INPUT = '.name'
 const EMAIL_INPUT = '.email'
@@ -17,7 +16,7 @@ const t0 = performance.now()
   await page.keyboard.type(NAME)
   await page.click(EMAIL_INPUT)
   await page.keyboard.type(EMAIL)
-
+  await page.click(BUTTON)
   await browser.close()
 })()
 const t1 = performance.now()
