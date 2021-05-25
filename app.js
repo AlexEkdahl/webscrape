@@ -1,7 +1,9 @@
+require('dotenv').config()
+
 const puppeteer = require('puppeteer')
-const NAME = 'name_goes_here'
-const EMAIL = 'your_email_goes_here'
-const URL = 'url_goes_here'
+const NAME = process.env.NAME
+const EMAIL = process.env.EMAIL
+const URL = process.env.URL
 
 const NAME_INPUT = '.name'
 const EMAIL_INPUT = '.email'
